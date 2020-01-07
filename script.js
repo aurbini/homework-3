@@ -44,7 +44,7 @@
         for (var i = 0; i < inputLength; ++i) {
             password += generator.charAt(Math.floor(Math.random() * generator.length));
         }   
-        
+
         textBox.value = password
 
         // document.getElementById("textBox").value = password; 
@@ -55,5 +55,17 @@
         }            
 
  }
+
+ function copyPassword(){
+     //Get the text field
+     var copyText = document.getElementById("textBox");
+     
+     copyText.select(); 
+     copyText.setSelectionRange(0,99999)
+
+     document.execCommand("copy"); 
+    if(copyText.value !== ""){
+     alert("copied the text: " + copyText.value); }
+ } 
  
 

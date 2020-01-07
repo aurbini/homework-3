@@ -9,12 +9,16 @@
 }
 .container-heading {
     margin-left: 30px;
+    margin-left: 30px;
+    border-bottom: grey solid 1px;
+    width: 75%;
 }
 .input-txt {
     height: 200px; 
     padding-bottom: 10px;
     text-align: center; 
     font-size: x-large;
+    border-style: dashed; 
 }
 
 .button {
